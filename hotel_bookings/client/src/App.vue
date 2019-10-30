@@ -30,8 +30,13 @@ export default {
 
     eventBus.$on("guest-deleted", id => {
       const index = this.guests.findIndex(guest => guest._id === id);
-      this.guests.splice(index, 1);
-    })
+      this.guests.splice(index, 1)
+    });
+
+    eventBus.$on("guest-updated", data => {
+      const index = this.guests.findIndex(guest => guest._id === id);
+      guests.index.checked_in = true
+    });
   },
   methods: {
     fetchData(){

@@ -11,13 +11,13 @@
       <input type="text" id="email" v-model="email" required>
     </div>
 
-    <div class="">
+    <!-- <div class="">
       <label for="checked_in">Checked In:</label>
       <select class="" name="checked_in" id="checked_in" v-model="checked_in">
         <option value="true">Yes</option>
         <option value="false">No</option>
       </select>
-    </div>
+    </div> -->
     <input type="submit" value="save" id="save">
   </form>
 </template>
